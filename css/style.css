@@ -188,7 +188,7 @@ p, a, h1, h2, h3, h4, h5, h6 {
     font-size: 48px;
 }
 
-.vision__subtitle {
+.vision__text {
     grid-column: span 4;
     justify-self: center;
     text-align: center;
@@ -378,7 +378,7 @@ p, a, h1, h2, h3, h4, h5, h6 {
     
 }
 
-.booking__subtitle {
+.booking__text {
     color: var(--color-white);
     font-size: 32px;
     font-weight: 400;
