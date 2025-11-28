@@ -24,5 +24,64 @@
         </nav>
     </header>
 
+    <section class="booking">
+        <h1 class="booking__title">Book Your Stay</h1>
+        <h2 class="booking__subtitle">Discover sustainable luxury powered by AI technology</h2>
+    </section>
+    <form class="booking__container">
+        <section class= "booking__box">
+            <label class="booking__label" for="date">Check-in</label>
+            <input class="booking__input" type="date" id="date" name="date"> <!--får vi skriva så här med id -->
+        </section>
+        <section class= "booking__box">
+            <label class="booking__label" for="date">Check-out</label>
+            <input class="booking__input" type="date" id="date" name="date"> <!--får vi skriva så här med id -->
+        </section>
+        <section class= "booking__box">
+            <label class="booking__label" for="date">Guests</label>
+            <input class="booking__input" type="number" id="guests" name="guests" min="1" max="10"> <!--får vi skriva så här med id -->
+        </section>
+        <section class= "booking__box">
+            <label class="booking__label" for="date">Room Type</label>
+            <select class="booking__select" name="room" id="room">
+                <option value="single">Single bed</option>
+                <option value="doble">Double bed</option>
+                <option value="suite">Suite</option>
+            </select>
+            <button class="booking__button">Book now</button>
+        </section>
+    </form>
+
+    <section class="booking__romms-section"> 
+        <h2 class="booking__romms-title">6 Rooms Available</h2>
+        <h3 class="booking__subtitle">Select dates to see availability</h3>
+    </section>
+
+     <article class="room">
+        <section class="room__img-box">
+            <img blass="room__img" src="./assets/photos/06-day.jpg" alt="">
+            <button class="room-star">4.9</button>
+        </section>
+        <h4 class="room__title">EcoSmart Suite</h4>
+        <i class="fa-solid fa-droplet sus__ikon"></i> <!--ny ikon-->
+        <p>Up to 2</p>
+        <p>45 m2</p>
+        <i class="fa-solid fa-droplet sus__ikon"></i> <!--ny ikon-->
+        <p>Features</p>
+        <button>King size bed</button>
+        <button>Ocean View</button>
+        <button>Smart climate</button>
+        <button>Premium Toiletries</button>
+        <i class="fa-solid fa-droplet sus__ikon"></i> <!--ny ikon-->
+        <p>AI Features</p>
+        <button>Voice Control</button>
+        <button>Smart Lighting</button>
+        <button>Digital Concierge</button>
+        <i class="fa-solid fa-droplet sus__ikon"></i> <!--ny ikon-->
+        <p>Sustainability</p>
+        <p>100% renewable energy, recycled materials</p>
+        <button>Reserve Room</button>
+     </article>
+<!-- detta är första sectionen med hotelrumm. behövs sättas ut sectioner, har bara skrivit ut allt, med fel ikon. -->
 </body>
 </html>
