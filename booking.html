@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Bonz.ai</title>
+    <title>Booking Bonz.ai</title>
     <script src="https://kit.fontawesome.com/f300007e95.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -24,64 +24,95 @@
         </nav>
     </header>
 
-    <section class="booking">
-        <h1 class="booking__title">Book Your Stay</h1>
-        <h2 class="booking__subtitle">Discover sustainable luxury powered by AI technology</h2>
-    </section>
-    <form class="booking__container">
-        <section class= "booking__box">
-            <label class="booking__label" for="date">Check-in</label>
-            <input class="booking__input" type="date" id="date" name="date"> <!--får vi skriva så här med id -->
+    <section class="wrapper">
+        <section class="booking">
+            <h1 class="booking__title">Book Your Stay</h1>
+            <h2 class="booking__subtitle">Discover sustainable luxury powered by AI technology</h2>
         </section>
-        <section class= "booking__box">
-            <label class="booking__label" for="date">Check-out</label>
-            <input class="booking__input" type="date" id="date" name="date"> <!--får vi skriva så här med id -->
-        </section>
-        <section class= "booking__box">
-            <label class="booking__label" for="date">Guests</label>
-            <input class="booking__input" type="number" id="guests" name="guests" min="1" max="10"> <!--får vi skriva så här med id -->
-        </section>
-        <section class= "booking__box">
-            <label class="booking__label" for="date">Room Type</label>
-            <select class="booking__select" name="room" id="room">
-                <option value="single">Single bed</option>
-                <option value="doble">Double bed</option>
-                <option value="suite">Suite</option>
-            </select>
-            <button class="booking__button">Book now</button>
-        </section>
-    </form>
+        <form class="booking__container">
+            <section class= "booking__box">
+                <label class="booking__label" for="date">Check-in</label>
+                <input class="booking__input" type="date" id="date" name="date"> <!--får vi skriva så här med id -->
+            </section>
+            <section class= "booking__box">
+                <label class="booking__label" for="date">Check-out</label>
+                <input class="booking__input" type="date" id="date" name="date"> <!--får vi skriva så här med id -->
+            </section>
+            <section class= "booking__box">
+                <label class="booking__label" for="date">Guests</label>
+                <input class="booking__input" type="number" id="guests" name="guests" min="1" max="10"> <!--får vi skriva så här med id -->
+            </section>
+            <section class= "booking__box">
+                <label class="booking__label" for="date">Room Type</label>
+                <select class="booking__select" name="room" id="room">
+                    <option value="single">Single bed</option>
+                    <option value="doble">Double bed</option>
+                    <option value="suite">Suite</option>
+                </select>
+            </section>
+            <section class="booking__box">
+                <button class="booking__button">Book now</button>
+            </section>
+        </form>
 
-    <section class="booking__romms-section"> 
-        <h2 class="booking__romms-title">6 Rooms Available</h2>
-        <h3 class="booking__subtitle">Select dates to see availability</h3>
-    </section>
-
-     <article class="room">
-        <section class="room__img-box">
-            <img blass="room__img" src="./assets/photos/06-day.jpg" alt="">
-            <button class="room-star">4.9</button>
+        <section class="booking__rooms-section"> 
+            <h2 class="booking__rooms-title">6 Rooms Available</h2>
+            <h3 class="booking__room-subtitle">Select dates to see availability</h3>
         </section>
-        <h4 class="room__title">EcoSmart Suite</h4>
-        <i class="fa-solid fa-droplet sus__ikon"></i> <!--ny ikon-->
-        <p>Up to 2</p>
-        <p>45 m2</p>
-        <i class="fa-solid fa-droplet sus__ikon"></i> <!--ny ikon-->
-        <p>Features</p>
-        <button>King size bed</button>
-        <button>Ocean View</button>
-        <button>Smart climate</button>
-        <button>Premium Toiletries</button>
-        <i class="fa-solid fa-droplet sus__ikon"></i> <!--ny ikon-->
-        <p>AI Features</p>
-        <button>Voice Control</button>
-        <button>Smart Lighting</button>
-        <button>Digital Concierge</button>
-        <i class="fa-solid fa-droplet sus__ikon"></i> <!--ny ikon-->
-        <p>Sustainability</p>
-        <p>100% renewable energy, recycled materials</p>
-        <button>Reserve Room</button>
-     </article>
+
+        <article class="room">
+            <section class="room__container">
+                <section class="room__img-box">
+                    <img class="room__img" src="./assets/photos/06-day.jpg" alt="">
+                    <section class="room__star">
+                        <i class="fa-solid fa-star room__ikon room__ikon--yellow"></i>
+                        <p class="room__ikon-number">4.9</p>
+                    </section>
+                </section>
+            
+                <section class="room__box">
+                    <h4 class="room__title">EcoSmart Suite</h4>
+                    <section class="room__price-section">
+                        <p class="room__price">$299</p>
+                        <p class="room__info">per night</p>
+                    </section>
+                    <section class="room__ikon-section">
+                        <section class="room__ikon-box">
+                            <i class="fa-solid fa-people-robbery room__ikon"></i>
+                            <p class="room__info">Up to 2</p>
+                        </section>
+                        <p class="room__info">45 m2</p>
+                    </section>
+                        
+                    <section class="room__ikon-section">
+                        <i  class="fa-solid fa-wifi room__ikon"></i>
+                        <p  class="room__info">Features</p>
+                    </section>
+                    <section class="function-section">
+                        <button class="room__function">King size bed</button>
+                        <button class="room__function">Ocean View</button>
+                        <button class="room__function">Smart climate</button>
+                        <button class="room__function" >Premium Toiletries</button>
+                    </section>
+                    <section class="room__ikon-section">
+                        <i class="fa-solid fa-brain room__ikon room__ikon--purple"></i>
+                        <p class="room__info">AI Features</p>
+                    </section>
+                    <section class="function-section">
+                        <button class="room__function">Voice Control</button>
+                        <button class="room__function">Smart Lighting</button>
+                        <button class="room__function">Digital Concierge</button>
+                    </section>
+                    <section class="room__ikon-section">
+                        <i class="fa-solid fa-leaf room__ikon room__ikon--primary"></i>
+                        <p class="room__info">Sustainability</p>
+                    </section>
+                    <p class="room__info-text">100% renewable energy, recycled materials</p>
+                    <button class="room__button">Reserve Room</button>
+                </section>
+            </section>
+        </article>
+    </section>
 <!-- detta är första sectionen med hotelrumm. behövs sättas ut sectioner, har bara skrivit ut allt, med fel ikon. -->
 </body>
 </html>
