@@ -28,9 +28,7 @@ p, a, h1, h2, h3, h4, h5, h6, label, select, input {
 }
 
 
-.wrapper {
 
-}
 
 /* Header */
 
@@ -68,6 +66,27 @@ p, a, h1, h2, h3, h4, h5, h6, label, select, input {
     padding: 1rem;
     margin: 1rem;
     font-weight: 600;
+}
+
+
+.header__hamburger-section {
+    /* background-color: #9810FA; */
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.header__hamburger {
+    display: none;
+    border: none;
+    border-radius: .3rem;
+    color: var(--color-white);
+    font-size: 25px;
+    background-color: var(--color-primary);
+    padding: .3rem .7rem .3rem .7rem;
+    margin: 1rem;
+    
+    
 }
 
 .header__nav--primary {
@@ -116,7 +135,7 @@ p, a, h1, h2, h3, h4, h5, h6, label, select, input {
     left: 0;
 
     position: absolute;
-    z-index: -1;
+    z-index: 0;
    /* display: block; */
     object-fit: cover;
 
@@ -174,9 +193,9 @@ p, a, h1, h2, h3, h4, h5, h6, label, select, input {
 
 /* Us */
 .vision {
+    background-color: var(--color-white);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* grid-template-rows: repeat(3, 1fr); */
+    grid-template-columns: repeat(4, 1fr); /*funkar ef???*/
     margin: 3rem 4rem;
 
 }
@@ -204,6 +223,7 @@ p, a, h1, h2, h3, h4, h5, h6, label, select, input {
     border-radius: 1.5rem;
     margin: 1.5rem .5rem;
     padding: 1rem 2rem;
+    grid-column: span 1;
 
 }
 
@@ -233,7 +253,7 @@ p, a, h1, h2, h3, h4, h5, h6, label, select, input {
 .sus {
     background-color: var(--color-secondary);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); */ /*funkar ef??
     /* grid-template-rows: repeat(3, 1fr); */
     /* margin: 3rem 4rem; */
     padding: 3rem 4rem;
@@ -628,7 +648,7 @@ p, a, h1, h2, h3, h4, h5, h6, label, select, input {
 
 /* Booking */
 
-.wrapper {
+.wrapper-booking {
     background-color: var(--color-secondary);
     padding: 4rem;
     
@@ -884,4 +904,70 @@ p, a, h1, h2, h3, h4, h5, h6, label, select, input {
     grid-column: span 5;
 
     
+}
+
+
+@media (max-width: 1100px) {
+
+    .header__hamburger {
+        display: block;
+
+    }
+
+    .header__nav {
+        
+    }
+
+    .header__nav-section {
+        display: none;
+    }
+    .vision {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vision__title,
+    .vision__text {
+        grid-column: span 2; 
+    }
+
+    .vision__card {
+        grid-column: span 1; 
+    }
+
+
+
+    /* .sus {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sus__title,
+    .sus__text {
+        grid-column: span 2; 
+    }
+
+    .sus__card {
+        grid-column: span 1; 
+    } */
+}
+
+@media (max-width: 600px) {
+    .vision {
+        grid-template-columns: 1fr;
+    }
+     .vision__title,
+    .vision__text {
+        grid-column: span 1; 
+    }
+
+    .vision__card {
+        grid-column: span 1;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .vision {
+        
+    }
+    
+   
 }
