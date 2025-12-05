@@ -30,35 +30,23 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
 
 
 
-/* Header */
+/* Header Alla*/
 
 .header {
     width: 100%;
-    /* height: 6rem; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     position: relative;
     z-index: 5;
-
 }
 
-.header__logo-section {
-
-}
 
 .header__logo {
     height: 3rem;
     margin: 1.5rem 6rem 1rem;
-
 }
 
-.header__nav-section {
-
-
-
-}
 
 .header__nav {
     color: black;
@@ -67,8 +55,6 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     margin: 1rem;
     font-weight: 600;
 }
-
-
 
 
 .header__hamburger {
@@ -80,9 +66,8 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     background-color: var(--color-primary);
     padding: .3rem .7rem .3rem .7rem;
     margin: 1rem;
-    
-    
 }
+
 
 .header__nav--primary {
     color: var(--color-primary);
@@ -92,8 +77,8 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     font-weight: 600;
 }
 
-.header__button {
 
+.header__button {
     padding: .7rem .5rem;
     margin-right: 7rem;
     background-color: var(--color-primary);
@@ -104,24 +89,20 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
 }
 
 
-/* Hero */
+/* Sida 1 (index) + någon återanvänd kod till sida 1 & 2 */
 
 .hero {
     width: 95%;
     height: 80vh;
-    position: relative; /*denna gör inget, varför har jag den?*/
-
-    /* display: grid;
-    grid-template-columns: repeat(5 ,1fr); */
-    /* grid-template-rows: repeat(3, 1fr); */
+    position: relative; /*hero about*/
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* dessa gör att bilden går ovanför headern...
-     */
-     justify-self: center;
+    align-items: center;  
+    justify-self: center;
 }
+
 
 .hero__img {
     width: 100%;
@@ -130,13 +111,9 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     left: 0;
 
     position: absolute;
-    z-index: 0;
-   /* display: block; */
-    object-fit: cover;
-
-
-
+    object-fit: cover; /* propitioner på bilden*/
 }
+
 
 .hero__text-section {
     color: var(--color-white);
@@ -149,9 +126,9 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     grid-column: 2/ 5;
     z-index: 1;
 
-
     text-align: center; /*centrerar text*/
 }
+
 
 .hero__title {
     font-size: 90px;
@@ -159,18 +136,19 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     color: var(--color-white);
 }
 
+
 .hero__subtitle {
     font-size: 36px;
     font-weight: 400;
 }
 
+
 .hero__button-section {
     display: flex;
     justify-content: center;
-    
-
     margin: 1rem;
 }
+
 
 .hero__button {
     color: var(--color-white);
@@ -179,7 +157,6 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     border-radius: .3rem;
     text-decoration: none;
     width: 9rem;
-    /* width: 100%; */
     padding: .7rem .5rem;
     margin-right: 2rem;
 
@@ -188,14 +165,13 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
 }
 
 
-/* Us */
 .vision {
     background-color: var(--color-white);
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /*funkar ef???*/
+    grid-template-columns: repeat(4, 1fr);
     margin: 3rem 4rem;
-
 }
+
 
 .vision__title {
     grid-column: span 4;
@@ -203,6 +179,7 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     font-weight: 400;
     font-size: 48px;
 }
+
 
 .vision__text {
     grid-column: span 4;
@@ -212,8 +189,8 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     font-family: Montserrat;
     font-weight: 400;
     font-size: 24px;
-
 }
+
 
 .vision__card {
     border: 1px solid var(--color-black);
@@ -221,8 +198,8 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     margin: 1.5rem .5rem;
     padding: 1rem 2rem;
     grid-column: span 1;
-
 }
+
 
 .vision__ikon {
     color:var(--color-primary);
@@ -230,8 +207,8 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     padding: .6rem;
     border-radius: 50%;
     font-size:  1.3rem;
-
 }
+
 
 .vision__card-title {
     font-weight: 400;
@@ -239,24 +216,21 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     margin: 2rem 0rem 1rem;
 }
 
+
 .vision__card-text {
     font-weight: 400;
     font-size: 20px;
     margin-bottom: 2rem;
-
-
 }
+
 
 .sus {
     background-color: var(--color-secondary);
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /*funkar ef??
-    /* grid-template-rows: repeat(3, 1fr); */
-    
+    grid-template-columns: repeat(4, 1fr);
     padding: 3rem 4rem;
-    
-
 }
+
 
 .sus__title {
     grid-column: span 4;
@@ -264,6 +238,7 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     font-weight: 400;
     font-size: 48px;
 }
+
 
 .sus__subtitle {
     grid-column: span 4;
@@ -273,7 +248,6 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     font-family: Montserrat;
     font-weight: 400;
     font-size: 28px;
-
 }
 
 
@@ -289,11 +263,11 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
 .sus__ikon {
     color:var(--color-primary);
     background-color: var(--color-ikon_bg);
-    font-size:  2rem;
     padding: .6rem;
     border-radius: 50%;
     font-size:  1.3rem;
 }
+
 
 .sus__card-title {
     color: var(--color-primary);
@@ -302,11 +276,13 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     margin: 2rem 0rem 1rem;
 }
 
+
 .sus__card-subtitle {
     font-weight: 400;
     font-size: 28px;
     margin: 2rem 0rem 2rem;
 }
+
 
 .sus__card-text {
     font-weight: 400;
@@ -325,21 +301,24 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     gap: 4rem;
 }
 
+
 .article__text-section {
     grid-column: 1/2;
-
 }
+
 
 .article__title {
     font-weight: 400;
     font-size: 48px;
-
+    margin-bottom: 1rem;
 }
+
 
 .article__subtitle {
     font-weight: 400;
     font-size: 20px;
 }
+
 
 .article__info {
     font-weight: 500;
@@ -347,10 +326,12 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     margin: 2.5rem 0rem .5rem;
 }
 
+
 .article__text {
     font-weight: 400;
     font-size: 20px;
 }
+
 
 .article__button {
     background-color: var(--color-primary);
@@ -363,9 +344,6 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     border-radius: .3rem;
 }
 
-.article__img-section {
-    grid-column: 2/3;
-}
 
 .article__img-section {
     grid-column: 2/3;
@@ -393,8 +371,8 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     color: var(--color-white);
     font-size: 48px;
     font-weight: 400;
-
 }
+
 
 .cta__text {
     color: var(--color-white);
@@ -402,6 +380,7 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     font-weight: 400;
     margin: 1rem;
 }
+
 
 .cta__button {
     background-color: var(--color-gray);
@@ -414,14 +393,13 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     border-radius: .3rem;
 }
 
+
 /* Footer */
 
 .footer {
     background-color: var(--color-secondary2);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* grid-template-rows: repeat(3, 1fr); */
-
 }
 
 
@@ -432,6 +410,7 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     grid-row: 1/2;
 }
 
+
 .footer__text {
     color:var(--color-white);
     grid-column: 1 /3;
@@ -440,19 +419,18 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     font-weight: 400;
     align-self: end;
     margin: 0rem 6rem 2rem 6rem;
-
 }
+
 
 .footer__info:nth-of-type(1) {
     color:var(--color-white);
-
-
     display: flex;
     flex-direction: column;
 
     grid-column: 3/ 4;
     grid-row: 1/2;
 }
+
 
 .footer__info:nth-of-type(2) {
     color:var(--color-white);
@@ -465,6 +443,7 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     grid-row: 1/2;
 }
 
+
 .footer__title {
     margin-bottom: 1rem;
     margin-top: 5rem;
@@ -472,24 +451,18 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     font-weight: 400;
 }
 
-/* .footer__addres {
-    margin-top: 2rem;
-    font-size: 16px;
-    font-weight: 400;
-} */
-
 
 .footer__list {
-    /* margin-top: 2rem; */
-    
     font-size: 16px;
     font-weight: 400;
     list-style: none;
 }
 
+
 .footer__item {
     margin: 1.5rem 0rem 0rem 1rem;
 }
+
 
 .footer__link,
 .footer__addres {
@@ -506,8 +479,8 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
 
     display: grid;
     grid-column: 1/5;
-
 }
+
 
 .footer__copy {
     color:var(--color-white);
@@ -517,31 +490,23 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     font-weight: 400;
     margin: 1rem 0rem 15rem 0rem;
     text-align: center;
-
 }
 
-
-/* absolut.html börjar här */
-
-/* Hotell */
 
 .hotel {
     background-color: var(--color-secondary);
     padding: 4rem 4rem 4rem 4rem;
 }
 
+
 .hotel__link-section {
     background-color: var(--color-gray);
     padding: 1rem;
     border-radius: 2rem;
-
-   /* grid-column: 2/3; */
-    /* display: flex;
-    justify-self: center; */
     text-align: center;
     margin: 0rem 20rem 0rem 20rem;
-
 }
+
 
 .hotel__link {
     color: var(--color-black);
@@ -549,32 +514,23 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     font-weight: 600;
     text-decoration: none;
     padding: 3rem;
-
-
-
-
 }
+
 
 .hotel__link--gray {
     background-color: var(--color-white);
     border-radius: 2rem;
     padding: .3rem 3rem;
-
-    /* display: flex;
-    flex-direction: row;
-    align-items: center; */
-
-
 }
+
 
 .hotel__title {
     font-size: 36px;
     font-weight: 500;
     text-align: center;
     padding: 6rem 0rem 2rem;
-    /* grid-column: 2/3; */
-
 }
+
 
 .hotel__text {
     font-size: 24px;
@@ -583,11 +539,12 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     text-align: center;
 }
 
+
 .hotel__section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
 }
+
 
 .hotel__card {
     background-color: var(--color-white);
@@ -596,22 +553,22 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     margin: .5rem;
 }
 
+
 .hotel__img {
     width: 100%;
     height: 40vh;
     border-top-left-radius : 1.5rem;
     border-top-right-radius : 1.5rem;
     object-fit: cover;
-
-
 }
+
 
 .hotel__card-title {
     font-size: 28px;
     font-weight: 400;
     padding: 2rem 1rem 0rem;
-
 }
+
 
 .hotel__card-text {
     font-size: 20px;
@@ -624,19 +581,20 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
 .cta__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-
 }
+
 
 .cta__box {
     color: var(--color-white);
-
 }
+
 
 .cta__box-number {
     font-size: 64px;
     font-weight: 400;
     margin: 3rem 0rem 1rem 0rem;
 }
+
 
 .cta__box-text {
     font-size: 20px;
@@ -645,20 +603,19 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
 }
 
 
+/* Sida 3 (BOOKING) */
 
-/* Booking */
-
-.wrapper-booking {
+.booking-wrapper {
     background-color: var(--color-secondary);
     padding: 4rem;
-    
-
 }
+
 
 .booking {
     justify-self: center;
     padding: 4rem;
 }
+
 
 .booking__title {
     font-size: 80px;
@@ -666,11 +623,12 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     justify-self: center;
 }
 
+
 .booking__subtitle {
     font-size: 36px;
     font-weight: 400;
-    
 }
+
 
 .booking__container {
     background-color: var(--color-white);
@@ -679,23 +637,25 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     border-radius: 1rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3); /*skugga bakom hela, behålla eller fixa underkant?*/
-
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3); /*skugga bakom hela*/
 }
+
 
 .booking__box {
     display: flex;
     flex-direction: column;
     align-self: end;
 
-    padding: .7rem; 
+    padding: .7rem;
 }
+
 
 .booking__label {
     font-size: 24px;
     font-weight: 600;
-    padding: 0rem 0rem 1rem 0rem;  
+    padding: 0rem 0rem 1rem 0rem;
 }
+
 
 .booking__input {
     /* padding: .5rem; */
@@ -706,6 +666,7 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     font-size: 16px;
 }
 
+
 .booking__select {
     padding: .5rem;
     background-color: var(--color-gray);
@@ -715,10 +676,9 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     border: .1rem solid black;
 }
 
+
 .booking__button {
-    /* padding: .5rem; */
     padding: .7rem .5rem;
-    /* margin-right: 7rem; */
     background-color: var(--color-primary);
     color: var(--color-white);
     border: none;
@@ -727,23 +687,23 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     font-size: 16px;
 }
 
+
 .booking__rooms-section {
     padding: 0rem 0rem 3rem 6rem;
 }
+
 
 .booking__rooms-title {
     font-size: 48px;
     font-weight: 400;
 }
 
+
 .booking__room-subtitle {
     font-size: 32px;
     font-weight: 400;
-
 }
 
-
-/* Room */
 
 .room__container {
     display: grid;
@@ -753,30 +713,30 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     border-radius: 1.5rem;
     margin: 5rem;
     box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    
 }
+
 
 .room__container--wrap {
     grid-template-columns: 3fr 2fr;
 }
 
+
 .room__img-box {
     border-radius: 1.5rem;
     position: relative;
     display: block
-    
 }
+
 
 .room__img {
     width: 100%;
-    /* height: 40vh; */
     height: 100%;
     border-top-left-radius : 1.5rem;
     border-bottom-left-radius : 1.5rem;
     object-fit: cover;
-    /* display: block; */
     position: relative;
 }
+
 
 .room__img--wrap {
     border-top-right-radius : 1.5rem;
@@ -784,6 +744,7 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     border-top-left-radius : 0;
     border-bottom-left-radius : 0;
 }
+
 
 .room__star {
     background-color: var(--color-gray);
@@ -793,8 +754,9 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     display: flex;
     align-items: center;
     top: 1rem;
-    right: 1rem ; 
+    right: 1rem ;
 }
+
 
 .room__ikon-number {
     border: none;
@@ -808,8 +770,6 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     margin: 2rem 2rem 0rem 2rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
- 
-  
 }
 
 
@@ -819,24 +779,26 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     grid-column: span 2;
 }
 
+
 .room__price-section {
     grid-column: 5/6;
     justify-self: end;
 }
 
+
 .room__price {
     font-size: 32px;
     font-weight: 400;
     color: var(--color-primary);
-    
- 
 }
+
 
 .room__info {
     font-size: 20px;
     font-weight: 400;
     grid-column: span 5;
 }
+
 
 .room__ikon-section {
     gap: .5rem;
@@ -847,29 +809,31 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
 }
 
 
-
 .room__ikon-box {
      gap: .5rem;
     display: flex;
     flex-direction: row;
 }
 
+
 .room__ikon--yellow {
     color: var(--color-yellow);
 }
+
 
 .room__ikon--purple {
     color: var(--color-purple);
 }
 
+
 .room__ikon--primary {
     color: var(--color-primary);
 }
 
+
 .room__function-section {
     grid-column: span 5;
 }
-
 
 
 .room__function {
@@ -881,9 +845,11 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     border-radius: .3rem;
 }
 
+
 .room__function--purple {
     color: var(--color-purple);
 }
+
 
 .room__info-text {
     font-size: 20px;
@@ -902,41 +868,42 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     font-weight: 600;
     font-size: 24px;
     grid-column: span 5;
-
-    
 }
+
 
 @media (max-width: 1500px) {
 
+/* Sida 3 (BOOKING) */
+    .booking__container {
+        grid-template-columns: repeat(2, 2fr);
+    }
 
-    
      .hotel__link-section {
-    margin: 3rem 5rem 0rem 5rem;
-    display: flex;
-    flex-direction: column;
-}
+        margin: 3rem 5rem 0rem 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+/* Sida 2 (ABOUT) */
     .hotel__link {
-            margin: 0rem 0rem 0rem 0rem;
-            padding: 1rem;
-        }
+        margin: 0rem 0rem 0rem 0rem;
+        padding: 1rem;
+    }
  }
 
 
 @media (max-width: 1100px) {
 
+/* header alla @media*/
     .header__hamburger {
         display: block;
-
-    }
-
-    .header__nav {
-        
     }
 
     .header__nav-section {
         display: none;
     }
 
+/* Sida 1 (INDEX) & 2 (ABOUT) @media*/
     .hero__text-section {
         margin: 1rem;
     }
@@ -951,17 +918,17 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
 
     .hero__button {
         width: 100%;
-        padding: 1.5rem .5rem;  
+        padding: 1.5rem .5rem;
     }
 
+    /* Sida 1 (INDEX) & 2 (ABOUT) @media*/
     .vision {
         grid-template-columns: repeat(2, 1fr);
         text-align: center;
-        
     }
 
     .vision__text {
-        margin: 1rem 1rem; 
+        margin: 1rem 1rem;
     }
 
     .vision__title,
@@ -970,25 +937,28 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     }
 
     .vision__card {
-        grid-column: span 1; 
+        grid-column: span 1;
     }
 
+/* Sida 1 (INDEX) @media*/
     .sus {
         grid-template-columns: repeat(2, 1fr);
         text-align: center;
     }
 
     .sus__subtitle {
-        margin: 1rem 1rem; 
+        margin: 1rem 1rem;
     }
+
     .sus__title,
     .sus__subtitle {
-        grid-column: span 2; 
+        grid-column: span 2;
     }
 
     .sus__card {
-        grid-column: span 1; 
+        grid-column: span 1;
     }
+
     .article {
         grid-template-columns: repeat(1, 1fr);
         text-align: center;
@@ -1003,38 +973,36 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
         width: 100%;
         padding: 1.5rem .5rem;
     }
-    
+
     .cta__button {
         width: 100%;
         padding: 1.5rem .5rem;
     }
 
-    /* footer */
+/* footer alla @media*/
     .footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         text-align: center;
     }
+
     .footer__logo {
         grid-column: span 2;
         grid-row: 1/2;
         justify-self: center;
-        
     }
 
     .footer__text {
         grid-column: span 2;
         grid-row: 2/3;
-        /* margin-top: 3rem; */
+ /* margin-top: 3rem; */
         padding: 0rem;
         margin: 3rem 3rem 2rem 3rem;
-        
     }
 
     .footer__info:nth-of-type(1) {
         grid-column: 1/2;
         grid-row: 3/4;
-
     }
 
     .footer__info:nth-of-type(2) {
@@ -1042,12 +1010,8 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
         grid-row: 3/4;
     }
 
-    
-    .footer__copy-section {
-       
-    }
 
-     /* ABOUT media */
+/* Sida 2 (ABOUT) @media*/
     .hotel__section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1058,30 +1022,105 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
     padding: 4rem 1rem 4rem 1rem;
     }
 
+/* Sida 1 (INDEX) & 2 (ABOUT) @media*/
     .cta__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
     }
 
-    .hotel__link-section {
-    /* padding: 1rem; */
-    /* border-radius: 2rem; */
 
-/*     
-    margin: 0rem 10rem 0rem 10rem;
-    display: flex;
-    flex-direction: column; */
-}
-    
+/* Sida 3 (Booking) @media */
+
+    .booking {
+        text-align: center;
+        padding: 0;
+    }
+
+    .booking__title {
+        font-size: 55px;
+        font-weight: 500;
+    }
+
+    .booking__subtitle {
+        font-size: 30px;
+    }
+    .booking__container {
+        padding: 1rem .5rem 1rem .5rem;
+        margin: 4rem 0rem 4rem 0rem;
+    }
+
+    .booking__label {
+        font-size: 20px;
+    }
+    .booking__input {
+        width: 90%;
+    }
+    .booking__select {
+        width: 90%
+    }
+
+    .booking__button {
+        width: 90%;
+    }
+
+    .booking__rooms-section {
+        text-align: center;
+        padding: 0rem 0rem 2rem 0rem;
+    }
+
+    .room__container {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        display: flex;
+        flex-direction: column;
+        margin: 0rem 0rem 3rem 0rem;
+    }
+
+
+    .room__img {
+        border-top-left-radius : 1.5rem;
+        border-top-right-radius : 1.5rem;
+        border-bottom-left-radius : 0rem;
+        border-bottom-right-radius : 0rem;
+        object-fit: cover;
+        position: relative;
+    }
+    .room__img--wrap {
+        border-top-left-radius : 0rem;
+        border-bottom-left-radius : 1.5rem;
+        border-bottom-right-radius : 1.5rem;
+        border-top-right-radius : 0rem;
+        object-fit: cover;
+        position: relative;
+    }
+
+    .room__box {
+        margin: 1rem;
+    }
+
+    .room__title {
+        grid-column: span 3;
+    }
+
+    .room__info {
+        font-size: 18px;
+    }
+
+    .room__function {
+        margin-top: .3rem;
+    }
+
 }
 
 @media (max-width: 600px) {
 
+/* Header alla @media */
     .header__logo {
         height: 2rem;
         margin: 1.5rem 1rem 1rem;
     }
+
+    /* Sida 1 (INDEX) & 2 (ABOUT) @media*/
     .hero {
         height: 100%;
     }
@@ -1098,28 +1137,29 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
 
     .hero__button {
         padding: 1.5rem .5rem;
-        
     }
 
+/* Sida 1 (INDEX) & 2 (ABOUT) @media*/
     .vision {
         grid-template-columns: 1fr;
         margin: 3rem 0rem;
     }
     .vision__title,
     .vision__text {
-        grid-column: span 1; 
+        grid-column: span 1;
     }
 
     .vision__card {
         grid-column: span 1;
     }
 
+/* Sida 1 (INDEX) @media*/
      .sus {
         grid-template-columns: 1fr;
         margin: 0rem 0rem;
         padding: 3rem 0rem;
     }
-    
+
     .vision__text,
     .sus__subtitle {
         margin: 1rem;
@@ -1127,22 +1167,29 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
 
     .sus__title,
     .sus__subtitle {
-        grid-column: span 1; 
+        grid-column: span 1;
         margin: 1rem;
     }
 
     .sus__card {
-        grid-column: span 1; 
+        grid-column: span 1;
     }
 
+/* Sida  1 (INDEX) @media*/
     .article {
         grid-template-columns: repeat(1, 1fr);
         text-align: center;
         margin: 4rem 1rem 0rem 1rem;
     }
 
+/* Sida 1 (index) & 2 (ABOUT) @media*/
     .cta {
         padding: 5rem 1rem 3rem 1rem;
+    }
+
+    .cta__container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
     .cta__title {
         font-size: 40px;
@@ -1156,7 +1203,8 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
         padding: 1.5rem .5rem;
     }
 
-    /* footer */
+   
+    /* footer alla @media*/
     .footer {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -1166,7 +1214,6 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
         grid-column: span 1;
         grid-row: 1/2;
         justify-self: center;
-        
     }
 
     .footer__text {
@@ -1174,13 +1221,11 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
         grid-row: 2/3;
         margin-top: 3rem;
         padding: 0rem;
-        
     }
 
     .footer__info:nth-of-type(1) {
         grid-column: 1/2;
         grid-row: 3/4;
-
     }
 
     .footer__info:nth-of-type(2) {
@@ -1188,24 +1233,104 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
         grid-row: 4/5;
     }
 
-     /* ABOUT media */
+
+    /* Sida 2 (ABOUT) media */
+     .hotel__link-section {
+        border-radius: 50px;
+        width: 100%;
+        height: 2.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        position: relative;
+    }
+    .hotel__link {
+        color: transparent;
+    }
+
+    .hotel__link--gray {
+        width: 30%;
+        height: 2rem;
+        position: absolute;
+    }
+
     .hotel__section {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    .cta__container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-
-    }
     
+/* Sida 3 (Booking) @media */
+    .booking-wrapper {
+        padding: 4rem .5rem 0rem .5rem;
+    }
+
+    .booking__title {
+        font-size: 45px;
+        font-weight: 500;
+    }
+     .booking__subtitle {
+        font-size: 20px;
+    }
+
+    .booking__rooms-section {
+        padding: 0rem 0rem 4rem 0rem;
+    }
+
+    .booking__rooms-title {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .booking__room-subtitle {
+        font-size: 20px;
+    }
+
+    .room__container {
+        display: flex;
+        flex-direction: column;
+        margin: 0rem 0rem 3rem 0rem;
+    }
+
+
+    .room__info {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:440px) {
+/* Sida 3 (Booking) @media */
+
+    .booking {
+        text-align: center;
+        padding: 0;
+    }
+    .booking__container {
+       grid-template-columns: repeat( 1,1fr);
+    }
+
+    .booking__label {
+        font-size: 18px;
+    }
+    .booking__input {
+        width: 90%;
+    }
+    .booking__select {
+        width: 90%
+    }
+
+    .booking__button {
+        width: 90%;
+    }
+
 }
 
 
 @media (max-width: 400px) {
 
+/* Header alla @media */
      .header__logo {
         margin: 1rem;
         height: 2.2rem;
@@ -1219,7 +1344,7 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
         display: block;
     }
 
-
+/* sida 1 (INDEX) & 2 (ABOUT)*/
     .hero {
         width: 100%;
     }
@@ -1229,28 +1354,133 @@ p, a, h1, h2, h3, h4, h5, h6, li, label, select, input {
         padding: 1rem;
     }
 
+/* sida 1 (INDEX) & 2 (ABOUT) */
     .vision,
     .sus {
         margin: 2rem, .5rem;
     }
-
+    .vision__title {
+        font-size: 35px;
+    }
+    
     .hero__subtitle,
     .vision__text {
         font-size: 20px;
-        /* padding: 1rem; */
         margin: 1rem .5rem;
     }
 
-    /* .hero__button-section {
-        width: 100%;
-        max-width: 320px;
-        margin: 1.5rem;
-    } */
-
-    .footer__copy {
+    .sus__title {
+        font-size: 35px;
+    }
+    .sus__subtitle {
         font-size: 20px;
     }
-    
 
-   
+    .sus__card {
+        padding: 2rem .5rem;
+        width: 90%;
+        justify-self: center;
+        
+    }
+
+    .sus__card-text {
+        font-size: 17px;
+    }
+
+    .article__title {
+        font-size: 35px;
+    }
+
+    .cta__title {
+        font-size: 35px;
+    }
+
+/* footer alla @media*/
+
+    .footer__logo {
+        margin: 3rem 0rem 0rem 0rem;
+    }
+    .footer__title {
+        margin: 0;
+    }
+    .footer__text {
+        margin: 2rem 1rem 3rem 1rem;
+    }
+
+    .footer__info {
+        margin: 0rem 1rem 03rem 1rem;
+    }
+
+    .footer__copy-section {
+         margin: 0rem 1rem 0rem 1rem
+    }
+
+    .footer__copy {
+        font-size: 16px;
+
+    }
+
+/* Sida 3 (BOOKING) @media */
+    .booking-wrapper {
+        background-color: transparent;
+        padding: .5rem;
+        box-shadow: none;
+    }
+
+    .booking__rooms-title {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .booking__room-subtitle {
+        font-size: 18px;
+    }
+    .booking__container {
+       background-color: var(--color-secondary);
+
+    }
+
+    .room__container {
+        box-shadow: none;
+        border-top: solid black 1px;
+        border-radius: 0;
+        /* margin: 2rem 1rem 1rem 1rem ; */
+        padding-top: 2rem;
+
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .room__containter--wrap {
+        margin: 0 ;
+        padding: 0;
+    }
+
+
+    .room__box {
+        margin: .5rem .3rem 0rem .3rem;
+
+    }
+
+    .room__title {
+    font-size: 25px;
+    }
+
+   .room__price {
+    font-size: 23px;
+    font-weight: 500;
+   }
+
+   .room__info {
+    font-size: 11px;
+    font-weight: 600;
+   }
+
+   .room__info-text {
+    font-size: 16px;
+    text-align: center;
+
+   }
 }
+
+
